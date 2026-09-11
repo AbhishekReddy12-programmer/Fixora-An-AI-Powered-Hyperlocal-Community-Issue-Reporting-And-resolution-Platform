@@ -25,10 +25,11 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         try {
           const userData = await api.get<UserResponse>('/auth/me');
           setUser(userData);
-        } catch (error) {
-          console.error('Failed to load user:', error);
+        } catch {
+          // Token is expired, invalid, or secret rotated -> clear cleanly
           localStorage.removeItem('access_token');
           localStorage.removeItem('refresh_token');
+          setUser(null);
         }
       }
       setIsLoading(false);
