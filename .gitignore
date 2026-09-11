@@ -1,0 +1,50 @@
+# Python & Virtual Environments
+__pycache__/
+*.py[cod]
+*$py.class
+backend/venv/
+venv/
+ENV/
+env/
+.venv/
+
+# Environment Variables & Secrets (NEVER COMMIT)
+.env
+.env.*
+!.env.example
+backend/.env
+backend/.env.production
+frontend/.env.local
+frontend/.env.production
+
+# Node & Next.js
+node_modules/
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/build/
+.npm
+npm-debug.log*
+
+# Direct Server Uploads (Defect Photos stored locally)
+backend/uploads/
+uploads/
+*.jpg
+*.jpeg
+*.png
+*.webp
+*.gif
+!frontend/public/**/*
+
+# IDE & OS Files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Test & Coverage artifacts
+.pytest_cache/
+.coverage
+htmlcov/

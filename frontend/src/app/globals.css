@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+:root {
+  --background: #fbf9f5;
+  --foreground: #1e293b;
+}
+
+body {
+  background-color: #fbf9f5;
+  color: #1e293b;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* LEAFLET RESPONSIVE & POSITIONING FIXES */
+.leaflet-container {
+  width: 100% !important;
+  height: 100% !important;
+  z-index: 10;
+  font-family: inherit;
+}
+
+.leaflet-pane {
+  z-index: 400 !important;
+}
+
+.leaflet-tile-pane {
+  z-index: 200 !important;
+}
+
+.leaflet-overlay-pane {
+  z-index: 400 !important;
+}
+
+.leaflet-shadow-pane {
+  z-index: 500 !important;
+}
+
+.leaflet-marker-pane {
+  z-index: 600 !important;
+}
+
+.leaflet-tooltip-pane {
+  z-index: 650 !important;
+}
+
+.leaflet-popup-pane {
+  z-index: 700 !important;
+}
+
+.leaflet-top,
+.leaflet-bottom {
+  z-index: 800 !important;
+}
+
+/* FIXORA UNIFIED LIVING NEIGHBORHOOD THEME */
+.fixora-bg-landing,
+.fixora-bg-action {
+  background-color: #fbf9f5 !important;
+  background-image: 
+    radial-gradient(circle at 10% 10%, rgba(16, 185, 129, 0.08) 0%, transparent 45%),
+    radial-gradient(circle at 90% 20%, rgba(37, 99, 235, 0.08) 0%, transparent 45%),
+    radial-gradient(circle at 50% 75%, rgba(245, 158, 11, 0.07) 0%, transparent 50%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140' viewBox='0 0 140 140'%3E%3Cg fill='none' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M16 34 L28 22 L40 34 L40 48 L16 48 Z' stroke='%23059669' stroke-width='1.5' opacity='0.22'/%3E%3Cpath d='M33 24 L33 20 L37 20 L37 28' stroke='%23059669' stroke-width='1.2' opacity='0.22'/%3E%3Cpath d='M24 48 L24 38 L32 38 L32 48' stroke='%23059669' stroke-width='1.2' opacity='0.22'/%3E%3Ccircle cx='54' cy='30' r='8' stroke='%2310b981' stroke-width='1.5' opacity='0.22' fill='%2310b981' fill-opacity='0.05'/%3E%3Cpath d='M54 38 L54 48' stroke='%2310b981' stroke-width='1.5' opacity='0.22'/%3E%3Cpath d='M40 44 Q 68 44 80 64 T 120 78' stroke='%230284c7' stroke-width='1.2' stroke-dasharray='3,3' opacity='0.24'/%3E%3Cpath d='M80 56 C76 56 73 59 73 63 C73 68 80 76 80 76 C80 76 87 68 87 63 C87 59 84 56 80 56 Z' stroke='%23d97706' stroke-width='1.5' opacity='0.26' fill='%23d97706' fill-opacity='0.08'/%3E%3Ccircle cx='80' cy='62' r='2' fill='%23d97706' opacity='0.3'/%3E%3Ccircle cx='114' cy='28' r='3.5' stroke='%232563eb' stroke-width='1.2' opacity='0.22'/%3E%3Cpath d='M107 40 C107 35 121 35 121 40' stroke='%232563eb' stroke-width='1.2' opacity='0.22'/%3E%3Ccircle cx='124' cy='30' r='3' stroke='%232563eb' stroke-width='1.2' opacity='0.22'/%3E%3Cpath d='M119 41 C119 37 130 37 130 41' stroke='%232563eb' stroke-width='1.2' opacity='0.22'/%3E%3Cpath d='M96 108 L106 98 L116 108 L116 122 L96 122 Z' stroke='%23059669' stroke-width='1.5' opacity='0.22'/%3E%3Cpath d='M102 122 L102 114 L110 114 L110 122' stroke='%23059669' stroke-width='1.2' opacity='0.22'/%3E%3Ccircle cx='30' cy='108' r='6.5' stroke='%2310b981' stroke-width='1.4' opacity='0.22'/%3E%3Cpath d='M30 115 L30 124' stroke='%2310b981' stroke-width='1.4' opacity='0.22'/%3E%3Cpath d='M42 118 L54 118 M44 118 L44 124 M52 118 L52 124' stroke='%23d97706' stroke-width='1.2' opacity='0.22'/%3E%3Cpath d='M16 122 Q 56 120 86 94 T 136 106' stroke='%23059669' stroke-width='1.2' stroke-dasharray='3,3' opacity='0.22'/%3E%3C/g%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
